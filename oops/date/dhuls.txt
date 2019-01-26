@@ -1,0 +1,108 @@
+bool Date:: isValidMonth() const  // PURPOSE : Subroutine to check the validity of month.
+{
+        int days=daysInMonth();
+        if(month=="January")
+  {
+   if(days<=31&& days>=1)
+   return 1;  // To check the maximum and minimum days in every month.
+   else
+   return 0;
+  }
+   else if(month=="February")
+  {
+    isLeapYear();
+  if(isLeapYear()==1 && days<=29)
+   return 1;  // To verify that in a leap year there are 29 days and for non leap year there are 28 days for february month.
+        else if(isLeapYear()==0 && days<=28)
+            return 1;
+        else return 0;
+    }
+
+    else if(month=="March")
+    {
+        if(days<=31&& days>=1)
+            return 1;
+        else
+            return 0;
+    }
+
+
+    else if(month=="April")
+    {
+        if(days<=30&& days>=1)
+            return 1;
+        else
+            return 0;
+    }
+    else if(month=="May")
+    {
+        if(days<=31&&days>=1)
+            return 1;
+        else
+            return 0;
+
+
+ else if(month== "June")
+   {
+        if(days<=30&&days>=1)
+            return 1;
+        else
+            return 0;
+    }
+    else if(month=="July")
+    {
+        if(days<=31&&days>=1)
+            return 1;
+        else
+            return 0;
+    }
+    else if(month=="August")
+    {
+        if(days<=31&& days>=1)
+            return 1;
+        else
+            return 0;
+    }
+
+    else if(month=="September")
+    {
+        if(days<=30&& days>=1)
+            return 1;
+        else
+            return 0;
+    }
+    else if(month== "October")
+    {
+        if(days<=31&&days>=1)
+            return 1;
+        else
+            return 0;
+    }
+
+    else if(month=="November")
+    {
+        if(days<=30&&days>=1)
+           return 1;
+
+    else
+            return 0;
+    }
+
+    else if(month=="November")
+    {
+        if(days<=30&&days>=1)
+            return 1;
+        else
+            return 0;
+    }
+    else if(month=="December")
+    {
+        if(days<=31&&days>=1)
+            return 1;
+        else
+            return 0;
+    }
+
+    else return 0;
+}
+
